@@ -21,6 +21,11 @@
     </build>
     <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>1.5.10.RELEASE</version>
+        </dependency>
 
         <dependency>
             <groupId>joda-time</groupId>

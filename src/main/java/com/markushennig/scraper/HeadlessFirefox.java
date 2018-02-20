@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 
 public class HeadlessFirefox {
 
-    Logger logger = LoggerFactory.getLogger(HeadlessFirefox.class);
+    final static Logger logger = LoggerFactory.getLogger(HeadlessFirefox.class);
 
     public static void main(String[] args) {
         System.setProperty("webdriver.gecko.driver", "C:\\DEV\\gecko.exe");
@@ -30,6 +30,7 @@ public class HeadlessFirefox {
         try {
             Files.copy(tmpFile, Paths.get("screenshot.png"));
         } catch (IOException e) {
+            logger.error("Saving Screenshot failed. Path=" +tmpFile);
         }
     }
 }
