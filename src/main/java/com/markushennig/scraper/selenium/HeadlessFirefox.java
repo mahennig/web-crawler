@@ -1,4 +1,4 @@
-package com.markushennig.scraper;
+package com.markushennig.scraper.selenium;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.firefox.FirefoxDriver;
